@@ -562,8 +562,8 @@ button:focus {
     position: fixed;
     top: 0;
     left: 0;
-    width: 1440px;
-    height: 676px;
+    width: 100%;
+    height: 100%;
     z-index: 999;
     /* display: flex;
     justify-content: center;
@@ -588,4 +588,53 @@ button:focus {
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
+}
+.modal-close {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    border-radius: 100%;
+    background-color:  #e7e9fc;
+    stroke-width: 1px;
+    color: rgba(0, 0, 0, 0.1);
+}
+.modal-title {
+    text-align: center;
+    max-width: 360px;
+    margin-bottom: 16px;
+}
+.modal-input {
+    width: 100%;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    background-color: transparent;
+    margin-bottom: 8px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 38px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 117%;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+}
+.modal-label {
+    font-size: 12px;
+    line-height: 117%;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+    margin-bottom: 4px;
+}
+.modal-icon {
+    position: absolute;
+    fill: #2e2f42;
+    left: 16px;
+    top: 11px;
+    bottom: 11px;
+    top: 50%;
+    transform: translateY(-50%);
+} 
+.modal-input-wrap {
+    position: relative;
 }
