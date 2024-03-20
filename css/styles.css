@@ -591,33 +591,63 @@ button:focus {
 }
 .modal-close {
     position: absolute;
-    right: 32px;
-    top: 32px;
-    border-radius: 100%;
+    right: 24px;
+    top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    border: 1px solid rgba(0,0, 0, 0.1);
+    border-radius: 50%;
     background-color:  #e7e9fc;
-    stroke-width: 1px;
-    color: rgba(0, 0, 0, 0.1);
+    margin-bottom: 24px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-icon {
+    fill: #2e2f42;
+    width: 8px;
+    height: 8px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-close:hover {
+    background-color: #404bbf;
+}
+.close-icon:hover {
+    fill: #ffffff;
 }
 .modal-title {
     text-align: center;
     max-width: 360px;
     margin-bottom: 16px;
+    font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #2e2f42;
 }
 .modal-input {
     width: 100%;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     background-color: transparent;
+    outline: transparent;
     margin-bottom: 8px;
-    padding-top: 11px;
-    padding-bottom: 11px;
-    padding-left: 38px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
+    padding: 11px 10px 11px 38px;
     font-size: 12px;
     line-height: 117%;
     letter-spacing: 0.04em;
-    color: rgba(46, 47, 66, 0.4);
+    color: #2e2f42;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-input:focus {
+    border-color: #4d5ae5;
+}
+.modal-input:focus + .modal-icon {
+    fill: #4d5ae5;
+    ;
 }
 .modal-label {
     font-size: 12px;
@@ -630,11 +660,31 @@ button:focus {
     position: absolute;
     fill: #2e2f42;
     left: 16px;
-    top: 11px;
-    bottom: 11px;
-    top: 50%;
+    top: 40%; 
     transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } 
 .modal-input-wrap {
     position: relative;
+}
+.modal-text {
+    width: 100%;
+    height: 138px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    background-color: transparent;
+    outline: transparent;
+    padding: 8px 16px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    resize: none;
+
+}
+.modal-text:focus{
+    border-color: #4d5ae5;
+}
+.modal-text::placeholder {
+    font-size: 12px;
+    line-height: 117%;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
 }
