@@ -562,8 +562,8 @@ button:focus {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 1440px;
+    height: 676px;
     z-index: 999;
     /* display: flex;
     justify-content: center;
@@ -687,4 +687,14 @@ button:focus {
     line-height: 117%;
     letter-spacing: 0.04em;
     color: rgba(46, 47, 66, 0.4);
+}
+.check-text {
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+}
+.check-link {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #4d5ae5;
 }
